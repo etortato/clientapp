@@ -1,0 +1,12 @@
+header {
+  background-image:
+    linear-gradient(
+      to right,
+      red, orange
+    );
+  height: 15vh;
+  padding-left: 2%;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 15vh;
+}

@@ -1,0 +1,30 @@
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">
+      Place your order here:
+    </label>
+    <input id="name" type="text" formControlName="order">
+    <span>{{ errorMessage }}</span>
+  </div>
+  <button class="button" type="submit">Order</button>
+</form>
+<div style="overflow-y: auto; max-height: 60vh;">
+  <table>
+    <thead>
+      <tr>
+        <td>Order</td>
+        <td>Time Of Day</td>
+        <td>Dish Type</td>
+        <td>Dish</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{ order.orderId }}</td>
+        <td>{{ order.timeOfDay }}</td>
+        <td>{{ order.dishType }}</td>
+        <td>{{ order.dish }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

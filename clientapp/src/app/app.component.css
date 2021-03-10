@@ -1,0 +1,5 @@
+content {
+  display: grid;
+  grid-template: 15vh 70vh 15vh/1fr;
+  grid-gap: 0px;
+}
